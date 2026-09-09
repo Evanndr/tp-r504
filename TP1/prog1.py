@@ -10,5 +10,5 @@ while True:
 	print(carre(chiffre))
 	a = input("Choisir un nombre a. ")
 	b = input("Choisir un nombre b. ")
-	res = f.puissance(a,b)
+	res = f.puissance(int(a),int(b))
 	print(res)
