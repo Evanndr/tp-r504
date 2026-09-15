@@ -1,1 +1,1 @@
-Test results : ![GitHub Workflow Status](https://github.com/Evanndr/tp-r504/actions/workflows/pytest.yml/badge.svg)
+Test results : ![GitHub Workflow Status](https://github.com/Evanndr/tp-r504/actions/workflows/pytest.yml/badge.svg)(https://github.com/Evanndr/tp-r504/actions)
