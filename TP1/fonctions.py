@@ -6,6 +6,6 @@ def puissance(a, b):
 		if b < 0:
 			raise TypeError("opération d’élevation de puissance indéfinie")
 	for i in range(b-1):
-		a = a*b
+		a = a*a
 	return a
 
