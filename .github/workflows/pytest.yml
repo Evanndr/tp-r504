@@ -24,6 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Montrer infos
-      - run: echo "Nom de la branche : ${{ github.ref_name }}"
-      - run: echo "OS de la machine virtuelle : ${{ runner.os }}"
-
+        run: |
+          echo "Nom de la branche : ${{ github.ref_name }}"
+          echo "OS de la machine virtuelle : ${{ runner.os }}"
