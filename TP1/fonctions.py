@@ -7,6 +7,9 @@ def puissance(a, b):
 	resultat = 1
 	for i in range(exposant):
 		resultat = resultat * a 
+
+	if b < 0:
+		return 1 / resultat
 	return resultat
 
 
