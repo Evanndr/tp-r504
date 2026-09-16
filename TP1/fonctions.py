@@ -1,11 +1,7 @@
 def puissance(a, b):
-	if not type(a) is int:
+	if not isinstance(a, int) or not isinstance(b, int):
 		raise TypeError("Only integers are allowed")
-	if not type(b) is int:
-		raise TypeError("Only integers are allowed")
-	if b < 0:
-		raise Exception("Sorry, no numbers below zero")
-	if a == 0:
+	if a == 0 and b == 0:
 		raise Exception("Sorry, no numbers below zero")
 	exposant = abs(b)
 	resultat = 1
