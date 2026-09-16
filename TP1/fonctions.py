@@ -3,11 +3,11 @@ def puissance(a, b):
 		raise TypeError("Only integers are allowed")
 	if not type(b) is int:
 		raise TypeError("Only integers are allowed")
+	if b < 0:
+		raise Exception("Sorry, no numbers below zero")
 	exposant = abs(b)
 	resultat = 1
 	for i in range(exposant):
 		resultat = resultat * a 
-	if b < 0:
- 		return 1 / resultat
 	return resultat
 

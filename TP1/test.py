@@ -13,5 +13,7 @@ def test_2():
 	assert f.puissance(-2,-1) == -0.5
 	assert f.puissance(0,1) == 0
 
-
+def test_exc_1():
+	with pytest.raises(Exception):
+		puissance(0,0)
 
