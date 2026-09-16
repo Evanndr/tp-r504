@@ -9,6 +9,10 @@ jobs:
       matrix:
         python-version: ["3.8", "3.10"]
     steps:
+      - name: Montrer infos
+        run: |
+          echo "Nom de la branche : ${{ github.ref_name }}"
+          echo "OS de la machine virtuelle : ${{ runner.os }}"
       - uses: actions/checkout@v4
       - name: Set up Python for Demo
         uses: actions/setup-python@v5
@@ -22,12 +26,3 @@ jobs:
         run: pytest TP1/test.py
       - name: Version Python
         run: echo python -- version
-
-  test2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Montrer infos
-        run: |
-          echo "Nom de la branche : ${{ github.ref_name }}"
-          echo "OS de la machine virtuelle : ${{ runner.os }}"
-
