@@ -11,3 +11,5 @@ def puissance(a, b):
 		resultat = resultat * a 
 	return resultat
 
+
+
