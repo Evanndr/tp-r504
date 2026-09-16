@@ -20,6 +20,8 @@ jobs:
           pip install pytest
       - name: Run tests
         run: pytest TP1/test.py
+      - name: Version Python
+        run: echo python -- version
 
   test2:
     runs-on: ubuntu-latest
@@ -28,3 +30,4 @@ jobs:
         run: |
           echo "Nom de la branche : ${{ github.ref_name }}"
           echo "OS de la machine virtuelle : ${{ runner.os }}"
+
