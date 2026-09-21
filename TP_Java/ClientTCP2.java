@@ -9,7 +9,7 @@ public class ClientTCP2
 		{
 			Socket socket = new Socket( "localhost", 2016 );
 			DataOutputStream dOut = new DataOutputStream( socket.getOutputStream() );
-			dOut . writeUTF ( args [0] ) ;
+			dOut.writeUTF ( args [0] ) ;
 			socket.close();
 		}
 		catch( Exception a )
