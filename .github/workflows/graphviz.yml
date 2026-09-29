@@ -14,5 +14,10 @@ jobs:
       - name: Lancement graphviz
         run: cd tp-graphes/ && bash run1.sh g4
 
+        - name: upload du resultat
+        uses: actions/upload-artifact@v4
+        with:
+          name: Images
+          path: tp-graphes/g4.svg
 
 
