@@ -1,0 +1,16 @@
+digraph {
+node [image="icon_router.png", shape="none" style="filled" fillcolor="aqua"];
+edge [fontsize="20pt" color="red"];
+0 [shape=box];
+0 -> 1;
+2 -> 4;
+3 -> 2;
+4 -> 1 [label="test"];
+1 -> 4;
+0 -> 4 [label="4"];
+0 [pos="4,0!"];
+1 [pos="2,2!"];
+2 [pos="1,4!"];
+3 [pos="7,2!"];
+4 [pos="7,5!"];
+}
