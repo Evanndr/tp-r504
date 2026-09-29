@@ -1,12 +1,15 @@
 name: graphes
 on: [push]
 jobs:
-	build:
-		runs-on: ubuntu-latest
-		steps:
-		- name: Installation de graphviz
-		run: sudo ...
-		- name: Check out repository code
-		uses: actions/checkout@v3
-		- name: Lancement graphviz
-		run: ./run.sh g4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Installation de graphviz
+    run: sudo ...
+    - name: Check out repository code
+    uses: actions/checkout@v3
+    - name: Lancement graphviz
+    run: ./run.sh g4
+
+
+
