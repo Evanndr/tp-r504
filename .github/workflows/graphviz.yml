@@ -12,5 +12,5 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y graphviz
 
       - name: Lancement graphviz
-        run: ./tp-graphes/run.sh g4
+        run: bash tp-graphes/run1.sh g4
 
