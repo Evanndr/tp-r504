@@ -1,16 +1,35 @@
 digraph {
-node [image="icon_router.png", shape="none" style="filled" fillcolor="aqua"];
-edge [fontsize="20pt" color="red"];
-0 [shape=box];
-0 -> 1;
-2 -> 4;
-3 -> 2;
-4 -> 1 [label="test"];
-1 -> 4;
-0 -> 4 [label="4"];
-0 [pos="4,0!"];
-1 [pos="2,2!"];
-2 [pos="1,4!"];
-3 [pos="7,2!"];
-4 [pos="7,5!"];
+    node [shape=none, image="icon_router.png", width="0.7", height="0.5", fixedsize=true, imagescale=true, labelloc=b, fontsize="10pt"];
+    edge [fontsize="12pt", color="gray40", len=1.5];
+
+
+    F [pos="1,2!"];
+    E [pos="4,1!"];
+    D [pos="4,4!"];
+    G [pos="2,6!"];
+    H [pos="4,8!"];
+    B [pos="6,8!"];
+    C [pos="6,4!"];
+    A [pos="9,5!"];
+
+
+    F -> G [label="6"];
+    B -> C [label="2"];
+    F -> D [label="3"];
+    F -> E [label="1"];
+    G -> H [label="14"];
+    G -> B [label="4"];
+    G -> D [label="1"];
+    H -> B [label="2"];
+    D -> B [label="9"];
+    D -> E [label="1"];
+    D -> C [label="1"];
+    E -> C [label="3"];
+    B -> A [label="1"];
+    C -> A [label="4"];
 }
+
+
+
+
+
